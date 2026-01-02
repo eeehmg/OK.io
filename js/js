@@ -1,4 +1,4 @@
-const bgm = document.getElementById("bgm");
+const bgm = document.getElementById("music.js.mp3");
 const btn = document.getElementById("music-toggle");
 
 let playing = false;
