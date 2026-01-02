@@ -1,0 +1,16 @@
+const bgm = document.getElementById("bgm");
+const btn = document.getElementById("music-toggle");
+
+let playing = false;
+
+btn.onclick = () => {
+  if (!playing) {
+    bgm.volume = 0.3;
+    bgm.play();
+    btn.textContent = "⏸";
+  } else {
+    bgm.pause();
+    btn.textContent = "🎵";
+  }
+  playing = !playing;
+};

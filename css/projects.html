@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>eenhmg</title>
+  <meta name="description" content="你的短介绍（比如：前端开发者 / 作品集 / 爱好）" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071022 0%,#0a1220 100%);color:#e6eef6;line-height:1.5}
+    .wrap{max-width:900px;margin:40px auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    header h1{font-size:1.25rem;margin:0}
+    nav a{color:var(--muted);margin-left:16px;text-decoration:none;font-size:0.95rem}
+    .hero{margin:36px 0;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .hero h2{margin:0 0 8px;font-size:1.6rem}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:12px;border-radius:8px;background:rgba(255,255,255,0.01)}
+    footer{margin-top:32px;color:var(--muted);font-size:0.9rem;text-align:center}
+    form label{display:block;margin-bottom:6px;color:var(--muted);font-size:0.9rem}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    button{margin-top:8px;padding:10px 14px;border-radius:8px;border:0;background:linear-gradient(90deg,var(--accent),#4ddf9b);color:#062028;font-weight:600;cursor:pointer}
+    @media(min-width:800px){.grid{grid-template-columns:2fr 1fr}}
+  </style>
+</head>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3754FX1KB0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3754FX1KB0');
+</script>
+
+<body class="page-projects">>
+  <div class="wrap">
+    <header>
+      <h1>作品*eeehmgZH>
+      <nav>
+       <a href="index.html">首页<a>
+       <a href="about.html">关于<a>
+       <a href="projects.html">作品<a>
+       <a href="contact">联系<a>
+
+  <section class="card">
+  <h2>个人主页 v1</h2>
+  <p class="desc">
+    第一个从 0 到上线的个人网站，用来记录学习过程和想法。
+  </p>
+  <ul class="tech">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>GitHub Pages</li>
+  </ul>
+  <div class="links">
+    <a href="https://eeehmg.github.io/" target="_blank">在线预览</a>
+    <a href="https://github.com/eeehmg" target="_blank">源码</a>
+  </div>
+</section>
+
+  <section class="card">
+  <h2>关于我页面</h2>
+  <p class="desc">
+    独立设计的第二个页面，练习多页面结构和内容组织。
+  </p>
+  <ul class="tech">
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+  <div class="links">
+    <a href="about.html">查看页面</a>
+  </div>
+</section>
+
+  <section class="card">
+  <h2>下一个练习项目</h2>
+  <p class="desc">
+    计划学习 JavaScript 后，做一个带交互的小功能页面。
+  <ul class="tech">
+    <li>JavaScript（计划中）</li>
+  </ul>
+</section>
+      </aside>
+
+    <footer>
+      © <span id="year"></span> eeenhmg · <span style="color:var(--muted)">基于静态页面 · 免费托管</span>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

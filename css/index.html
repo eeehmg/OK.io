@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>eenhmg</title>
+  <meta name="description" content="你的短介绍（比如：前端开发者 / 作品集 / 爱好）" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071022 0%,#0a1220 100%);color:#e6eef6;line-height:1.5}
+    .wrap{max-width:900px;margin:40px auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    header h1{font-size:1.25rem;margin:0}
+    nav a{color:var(--muted);margin-left:16px;text-decoration:none;font-size:0.95rem}
+    .hero{margin:36px 0;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .hero h2{margin:0 0 8px;font-size:1.6rem}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:12px;border-radius:8px;background:rgba(255,255,255,0.01)}
+    footer{margin-top:32px;color:var(--muted);font-size:0.9rem;text-align:center}
+    form label{display:block;margin-bottom:6px;color:var(--muted);font-size:0.9rem}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    button{margin-top:8px;padding:10px 14px;border-radius:8px;border:0;background:linear-gradient(90deg,var(--accent),#4ddf9b);color:#062028;font-weight:600;cursor:pointer}
+    @media(min-width:800px){.grid{grid-template-columns:2fr 1fr}}
+  </style>
+</head>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3754FX1KB0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3754FX1KB0');
+</script>
+
+<body class="page-home">
+  <div class="wrap">
+    <header>
+      <nav>
+        <h1>eeehmgZH</h1>
+        <a href="about.html">首页<a>
+        <a href="projects">作品<a>
+        <a href="contact">联系<a>
+<script src="assets/js/music.js"></script>
+  <body class="page-home">
+  <div class="bg-mask"></div>
+</body>
+    <section class="hero card">
+      <h2>嗨，我是个新手编程小白<span style="color:var(--accent)">。</span></h2>
+     <p style="color:var(--muted)"> 正在学习前端，慢慢把想法变成网页，搭建属于自己的小世界</p>
+    </section>
+
+    <div class="grid">
+      <div>
+        <section id="about" class="card">
+          <h3>关于我</h3>
+          <section class="hero card hero-flex">
+          <img src="avata.jpg.png" alt="HaoGE 的头像" class="avatar">
+          <div>
+          <p style="color:var(--muted)">我是一名正在学习前端的初学者，目前主要接触 HTML、CSS 和基础 JavaScript喜欢把看到的页面拆解、复刻出来，在实践中理解代码是如何工作的现在更关注打基础、培养感觉，慢慢搭建长期属于自己的个人网站</p>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:14px">
+          <h3>作品集</h3>
+          <div class="projects">
+            <div class="project">
+              <strong>项目名称:个人主页v1 </strong>
+              <p style="color:var(--muted);margin:6px 0">第一个从 0 到上线的个人网站</p>
+            </div>
+            <div class="project">
+              <strong>项目名称 B</strong>
+              <p style="color:var(--muted);margin:6px 0">了解HTML / CSS / GitHub Pages</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card">
+          <h3>技能 & 工具</h3>
+          <p style="color:var(--muted)">列举 6-8 项：例如 HTML, CSS, JavaScript, React, Git, Figma正在学习中..</p>
+        </section>
+
+        <section id="contact" class="card" style="margin-top:12px">
+          <h3>联系我</h3>
+          <img src="ok.jpg.png" alt=">
+          <form action="https://formspree.io/f/your-id" method="POST">
+            <label>邮箱</label>
+            <input type="email" name="email" required placeholder="2396017648@at.com">
+            <label>内容</label>
+            <textarea name="message" rows="4" required placeholder="想聊什么..."></textarea>
+            <button type="submit">发送</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> eeenhmg · <span style="color:var(--muted)">基于静态页面 · 免费托管</span>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
