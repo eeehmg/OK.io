@@ -38,10 +38,19 @@
 
 <body class="page-home">
   <body class="page-home">
-  <div class="bg-mask"></div>
-  <js id="js/music.js.mp3" loop>
-  <source src="js/music.js.mp3" type="js/music.js.mp3">
-<button id="js/music.js.mp3">🎵</button>
+  <audio id="bgm" loop>
+  <source src="js/music.js.mp3" type="js/mpeg">
+</audio>
+<button id="music-toggle">播放音乐</button>
+<script>
+  const bgm = document.getElementById("music.js");
+  const btn = document.getElementById("music-toggle");
+btn.onclick = () => {
+    bgm.volume = 0.3;
+    bgm.play();
+    console.log("clicked");
+  };
+</script>
   <div class="wrap">
     <header>
       <nav>
